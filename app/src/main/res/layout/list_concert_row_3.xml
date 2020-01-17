@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.sifa.application.sifa.ConcertClicked"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:measureWithLargestChild="true"
+    android:background="#e2e2e2"
+    android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d1d0d0"
+            android:padding="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:id="@+id/picture_1"
+                android:src="#246161"
+                android:padding="10dp" />
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:id="@+id/picture_2"
+                android:src="#246161"
+                android:padding="10dp"
+                android:layout_below="@+id/picture_1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:id="@+id/picture_3"
+                android:src="#246161"
+                android:padding="10dp"
+                android:layout_below="@+id/picture_1"
+                android:layout_toRightOf="@+id/picture_1"
+                android:layout_toEndOf="@+id/picture_1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Main Artist(s)"
+                android:textColor="#1a237e"
+                android:paddingTop="20dp"
+                android:id="@+id/main_artist_1"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/picture_1"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DATE"
+                android:textColor="#c62828"
+                android:id="@+id/date_1"
+                android:paddingTop="3dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/picture_1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

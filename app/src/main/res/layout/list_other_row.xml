@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.sifa.application.sifa.ConcertClicked"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:measureWithLargestChild="true"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="7dp"
+        android:padding="5dp"
+        android:background="#d1d0d0">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/vector_pic"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_setting_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Item Text"
+            android:textColor="#1a237e"
+            android:paddingTop="7dp"
+            android:id="@+id/subject_text"
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/vector_pic"
+            android:layout_toEndOf="@+id/vector_pic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
